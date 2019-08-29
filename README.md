@@ -1,9 +1,9 @@
 # Ejercicios Estructuras de Control
 
-Nombre:
+Nombre: Franco Jesùs Bolaños Gainsborg
 --
 
-Github Username:
+Github Username: FrancoBolanos
 --
 
 Instrucciones:
