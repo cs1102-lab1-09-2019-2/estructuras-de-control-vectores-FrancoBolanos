@@ -29,7 +29,8 @@ float promedio(vector<int> &lista) {
     /*
     El promedio es la suma de todos los elementos dividido entre el total de elementos
      */
-    float suma = 0, i=0;
+    float suma = 0;
+    int i=0;
     while (i < lista.size()) {i++;
         suma += lista[i];
     }
