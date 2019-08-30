@@ -11,10 +11,24 @@ Escribir un programa que imprima lo siguiente:
 */
 
 #include <iostream>
-using std::cout;
+
+using namespace std;
 
 int main() {
+    int n, i=1, a=0, b=1;
+    cout<<"Ingresar un nùmero:\n";
+    cin>>n;
 
 
+    while (i<n){i++;
+        a=0;
+        b=0;
+        while (a<i) {a++;
+            cout<<a;
+        } while (b<n-a) {b++;
+            cout<<'*';
+        }
+        cout<<endl;
+    }
     return 0;
 }
