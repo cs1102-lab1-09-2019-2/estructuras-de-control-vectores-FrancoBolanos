@@ -24,6 +24,7 @@ using namespace std;
 
 int main() {
     float a, b, c, delta, x1, x2;
+    cout<<"Ingrese los valores de a, b y c separados por espacio (ax^2+bx+c):\n";
     cin>>a>>b>>c;
     delta=(b*b-4*a*c);
 
