@@ -26,24 +26,58 @@ using std::cin;
 using std::invalid_argument;
 
 void mostrarMenu();
-int sumar(int a, int b);
-int restar(int a, int b);
-int multiplicar(int a, int b);
-float dividir(int a, int b);
-int modulo(int a, int b);
+int sumar(int a, int b){return a+b;}
+int restar(int a, int b){return a-b;}
+int multiplicar(int a, int b){return a*b;}
+float dividir(float a, float b){return a/b;}
+int modulo(int a, int b){return a%b;}
 
 
 void mostrarMenu() {
     cout<<"***************************************************\n";
     cout<<"                     MENU                          \n";
     cout<<"***************************************************\n";
-    cout<<"  1.- Add\n";
+    cout<<"  1.- Suma\n";
     cout<<"  2.- Resta\n";
     cout<<"  3.- Multiplicar\n";
     cout<<"  4.- Dividir\n";
-    cout<<"  6.- Modulo\n";
+    cout<<"  5.- Modulo\n";
 }
 
 int main() {
+    int opcion;
+    float resultado=0, a, b;
+    char x;
+
+    do {
+        cout <<"\n";
+        mostrarMenu();
+        cout << "\nIngresa una opcion: ";
+        cin >> opcion;
+        cout << "\nIngresa los dos nùmeros: ";
+        cin >> a >> b;
+
+
+        switch (opcion) {
+            case 1:
+                resultado = sumar(a, b);
+                break;
+            case 2:
+                resultado = restar(a, b);
+                break;
+            case 3:
+                resultado = multiplicar(a, b);
+                break;
+            case 4:
+                resultado = dividir(a, b);
+                break;
+            case 5:
+                resultado = modulo(a, b);
+                break;
+        }
+        cout << "Resultado: " << resultado << "\n";
+        cout << "\n¿Continuar? y/n:\n";
+        cin >> x;
+    } while (x=='y');
     return 0;
 }
